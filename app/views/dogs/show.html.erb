@@ -1,0 +1,10 @@
+<h1>Dog Show</h1>
+
+<h3><%= @dog.to_s %></h3>
+
+<h3>Employees: </h3>
+<ol>
+<% @dog.employees.each do |employee| %>
+    <li><%= employee.to_s %></li>
+<% end %>
+</ol>
