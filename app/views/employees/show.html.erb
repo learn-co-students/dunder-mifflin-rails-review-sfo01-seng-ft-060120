@@ -1,0 +1,13 @@
+<h1>Employee Show</h1>
+
+<h3><%= @employee.to_s %></h3>
+
+<h4>Nickname: <%= @employee.alias %> </h4>
+<h4>Title: <%= @employee.title %> </h4>
+<h4>Office: <%= @employee.office %> </h4>
+<h4>Dog: <%= @employee.dog.name %> </h4>
+
+<img src="<%= @employee.img_url %>" alt="<%= @employee.to_s %>" width="70%">
+
+
+<!--Employee (first_name, last_name, alias, title, office, dog, img_url) -->
