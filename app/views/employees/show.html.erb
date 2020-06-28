@@ -1,0 +1,8 @@
+<h3><%= "#{@employee.to_s}'s Bio" %></h3><br>
+
+<%= "Alias: #{@employee.alias}" %><br>
+<%= "Title: #{@employee.title}" %><br>
+<%= "Office: #{@employee.office}" %><br>
+<%= "Dog: #{@employee.dog.name}" %><br>
+<%= button_to "DELETE EMPLOYEE", @employee, method: :delete %><br>
+<%= image_tag @employee.img_url %><br>

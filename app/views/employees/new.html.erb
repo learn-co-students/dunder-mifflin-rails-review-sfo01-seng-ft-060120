@@ -1,0 +1,13 @@
+<h3> Create a New Employee </h3><br>
+
+<%= flash[:message] %>
+<%= form_for @employee do |e| %>
+    First Name: <%= e.text_field :first_name %><br><br>
+    Last Name: <%= e.text_field :last_name %><br><br>
+    Alias: <%= e.text_field :alias %><br><br><br>
+    Title: <%= e.text_field :title %><br><br><br>
+    Office: <%= e.text_field :office %><br><br><br>
+    Image: <%= e.text_field :img_url %><br><br><br>
+    Dog: <%= e.collection_select :dog_id, Dog.all, :id, :name %><br><br><br>
+    <%= e.submit %>
+<% end %>

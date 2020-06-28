@@ -1,0 +1,8 @@
+<h3> Edit an Existing Dog </h3><br>
+
+<%= form_for @dog do |d| %>
+    Name: <%= d.text_field :name %><br><br>
+    Breed: <%= d.text_field :breed %><br><br>
+    Age: <%= d.text_field :age %><br><br><br>
+    <%= d.submit %>
+<% end %>
